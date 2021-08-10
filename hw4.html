@@ -1,0 +1,59 @@
+<!--
+Vijaya Anisetti
+vijaya_anisetti@student.uml.edu
+File: hw4.html
+Assignment: Creating an Interactive Dynamic Table
+Created a wepage that has a dynamically changing multiplication table based on the user's 
+input. This file consists of the html code that allows me to create the 
+table and includes the jquery plugins that allow me to use jquery validation. 
+-->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Dynamic Multiplication Table</title>
+        <link rel="stylesheet"
+        href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css"/>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+        <link rel="stylesheet" href="hw4.css"/>
+        <script src="hw4.js"></script>
+        <script src = "form-validation.js"></script>
+    </head>
+    <body>
+        <div id="header">
+			<header>
+                <h1>
+                    Dynamic Multiplication Table
+                </h1>
+            </header>
+        </div>
+                
+        <div class = "wrapper">
+        <!--Code for form was taken from W3Schools Website-->
+            <form id="form3" action="hw4.html" method="post">
+
+                <label for="lowcol">Low Range for Column </label><br>
+                <input id="lowcol"  type="text"  name="lowcol"><br>
+
+                <label for="highcol">High Range for Column </label><br>
+                <input id="highcol"  type="text"  name="highcol"><br>
+
+                <label for="lowrow">Low Range for Row </label><br>
+                <input id="lowrow"  type="text"  name="lowrow"><br>
+
+                <label for="highrow">High Range for Row  </label><br>
+                <input id="highrow"  type="text" name="highrow"><br><br>
+
+                <input type="submit"  id = "button" value="Submit" ></button>
+                </form>
+        </div>
+         <p id="demo"></p>
+
+        <div id = "tablearea"></div>
+    </body>
+</html>
